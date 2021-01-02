@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+.flex-container,html,body{
+    height: 100%;
+    margin: 0;
+}
+
+
+
+.flex-container{
+    display:flex;
+    flex-direction: column;
+
+
+
+    font-family: "Courier New", Courier, monospace; 
+
+
+}
+
+.header-section{
+    text-align: center;
+    background-color: papayawhip;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.header-buttons{
+    font-size: 25px;
+}
+
+
+.main-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:  rgb(107, 47, 47);
+    
+    flex:2;
+}
+
+.animal{
+
+    padding: 0px;
+
+}
+
+
