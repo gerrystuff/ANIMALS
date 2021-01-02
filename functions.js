@@ -1,19 +1,27 @@
 
-const DOG_URL = "https://api.thecatapi.com/v1/images/search";
+const ANIMAL_URL  = [
+    "https://dog.ceo/api/breeds/image/random",
+    "https://api.thecatapi.com/v1/images/search"
+    
+]
+
+
 const animal = document.querySelector('.animal');
 
 
 let flag = false;
 
 
-function addNewDoggo() {
+function addNewAnimal(value) {
 
+    console.log('entre')
         if(!flag){
         animal.setAttribute("border","5px solid");
             flag = true;
         }
 
-        const promise = fetch(DOG_URL);
+        const promise = fetch(ANIMAL_URL[value]);
+
         promise
         .then(function(response) {
         const processingPromise = response.json();
@@ -21,7 +29,10 @@ function addNewDoggo() {
         })
         .then(function(processedResponse) {
 
+        if(value == 1)    
         animal.src =processedResponse[0].url;
+        else
+        animal.src = processedResponse.message;
         });
 
 
@@ -33,7 +44,12 @@ function buttonClick(value){
 
 
     if(value == 'DOG'){
-       addNewDoggo();
+       addNewAnimal(0);
+        return;
+    }
+
+    if(value == 'CAT'){
+        addNewAnimal(1)  
         return;
     }
 
