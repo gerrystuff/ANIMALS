@@ -40,7 +40,7 @@ let flag = false;
     function buttonClick(value){
 
         if(!flag){
-            animal.setAttribute("border","5px solid");
+            animal.setAttribute("border","2px solid");
                 flag = true;
             }
     
