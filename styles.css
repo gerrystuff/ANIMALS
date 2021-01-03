@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+
+
 .flex-container,html,body{
     height: 100%;
     margin: 0;
@@ -55,3 +57,12 @@ button{
 }
 
 
+
+@media screen and (max-width:800px){
+    
+    .animal{
+        width: 85%;
+        height: 75%;
+        
+    }
+}
