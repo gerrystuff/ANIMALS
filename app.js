@@ -1,18 +1,6 @@
 const auth = "563492ad6f91700001000001b75b3f9ab4664bd7b5b752c4f00a8179 "
 const animal = document.querySelector('.animal');
 
-let dogs;
-
-const pictures = [
-    'dog',
-    'cat',
-    'bear',
-    'fish',
-    'bird'
-]
-
-let arrays = [];
-
 async function setContent(){
 
     for(let i = 0; i < pictures.length;i++ ){
@@ -30,7 +18,10 @@ async function setContent(){
         }
     );
 
+    console.log(promise.headers.values)
     const object = await promise.json();
+
+
      arrays.push(object.photos);
 
     }
