@@ -59,11 +59,13 @@ button{
 
 
 
-@media screen and (max-width:800px){
+/* @media screen and (max-width:800px){
     
     .animal{
-        width: 85%;
-        height: 75%;
+
+        src: "./buho2.png";
         
     }
-}
+
+    
+} */
