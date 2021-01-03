@@ -48,6 +48,14 @@ let flag = false;
 
         if(value === 'DOG'){
             console.log('entre a perros')
+            let w  = arrays[0][randomNum].width;
+            let h = arrays[0][randomNum].heigth;
+
+            animal.setAttribute("width",w);
+            animal.setAttribute("height",h);
+
+            console.log(w)
+            console.log(h)
           animal.src = arrays[0][randomNum].src.large;
           return;  
         }
