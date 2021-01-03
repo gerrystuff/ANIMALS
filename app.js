@@ -48,41 +48,35 @@ let flag = false;
 
         if(value === 'DOG'){
             console.log('entre a perros')
-            let w  = arrays[0][randomNum].width;
-            let h = arrays[0][randomNum].heigth;
 
-            animal.setAttribute("width",w);
-            animal.setAttribute("height",h);
 
-            console.log(w)
-            console.log(h)
-          animal.src = arrays[0][randomNum].src.large;
+          animal.src = arrays[0][randomNum].src.medium;
           return;  
         }
 
         
         if(value === 'CAT'){
             console.log('entre a gatos')
-            animal.src = arrays[1][randomNum].src.large;
+            animal.src = arrays[1][randomNum].src.medium;
             return;  
           }
 
         if(value === 'BEAR'){
             console.log('entre a osso')
-            animal.src = arrays[2][randomNum].src.large;
+            animal.src = arrays[2][randomNum].src.medium;
             return;  
           }
 
         if(value === 'FISH'){
             console.log('entre a peces')
 
-            animal.src = arrays[3][randomNum].src.large;
+            animal.src = arrays[3][randomNum].src.medium;
             return;  
           }
 
         if(value === 'BIRD'){
             console.log('entre a pajaritos')
-            animal.src = arrays[4][randomNum].src.large;
+            animal.src = arrays[4][randomNum].src.medium;
             return;  
           }
     }
